@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .banner {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        padding: 20px;
+      }
+      .greeting,
+      .footer {
+        margin: 0 0 20px;
+      }
+      .event-details {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+      .event-details p {
+        margin: 5px 0;
+      }
+      .footer {
+        font-size: 0.9em;
+        color: #666666;
+      }
+      .check-in-number {
+        font-weight: bold;
+        color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Banner Image -->
+      <img
+        src="https://lh3.googleusercontent.com/d/1R-1O8Z9QI52LzOCIKEvsBvvy2ldeAwFy=w1000?authuser=0"
+        alt="X-Ops Space Forum Banner"
+        class="banner"
+      />
+
+      <!-- Email Content -->
+      <div class="content">
+        <!-- Greeting -->
+        <p class="greeting">Dear <strong>{{name}}</strong>,</p>
+
+        <p>
+          Thank you for registering for
+          <strong
+            >X-Ops Space Forum: Exploring ML, Development, and Security
+            Galaxies!</strong
+          >
+          We are thrilled to have you join us for this unique exploration of Ops
+          in various domains.
+        </p>
+
+        <!-- Event Details -->
+        <div class="event-details">
+          <p><strong>Event Details:</strong></p>
+          <p>Date: <strong>November 13th</strong></p>
+          <p>Location: <strong>Sup'Com</strong></p>
+          <p>Time: <strong>7:30 AM</strong></p>
+        </div>
+
+        <p>
+          To ensure a smooth check-in process on the event day, please find your
+          personalized details below:
+        </p>
+        <p>
+          Your Check-In Number:
+          <span class="check-in-number">{{number}}</span>
+        </p>
+        <p>
+          QR Code:
+          <em>Attached to this email (please save it for easy access).</em>
+        </p>
+
+        <p>
+          <strong>Important Check-In Instructions:</strong> On the day of the
+          event, please present the attached QR code along with your check-in
+          number at the entrance to expedite your entry.
+        </p>
+
+        <!-- Footer -->
+        <p>
+          If you have any questions or need further assistance, feel free to
+          reach out to us at
+          <a href="mailto:team.supcom@supcom.tn">team.supcom@supcom.tn</a>
+        </p>
+
+        <p class="footer">
+          We look forward to welcoming you to the X-Ops Space Forum!
+        </p>
+
+        <p class="footer">
+          Best regards,<br />
+          X-Ops Space Forum Team
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
